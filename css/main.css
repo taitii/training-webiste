@@ -1,0 +1,354 @@
+/** GLOBAL SETTINGS **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+html {
+    font-size: 62.5%;
+    font-family: "Source sans pro", sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    --color-primary-light: rgb(245, 169, 82);
+    --color-primary-dark: rgb(250, 133, 0);
+
+    --color-secondary-light: rgb(76, 0, 240);
+
+
+    --color-white: #fff;
+    --color-white-dark: rgb(218, 218, 218);
+    --color-white-dark-1: rgb(98, 98, 98);
+    --color-white-dark-2: rgb(39, 39, 39);
+}
+
+
+/** HEADER **/
+
+.header {
+    background-image: url(../img/Background\ image_edited.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 5rem 6rem;
+
+}
+
+.nav-container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+    align-content: stretch;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+.main-nav__items {
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav__items a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--color-white);
+    margin-left: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .5s;
+}
+
+.main-nav__items a:hover,
+.main-nav__items a:active {
+    border-bottom: 2px solid var(--color-white);
+}
+
+.heading-box {
+    margin-top: 23rem;
+}
+
+.main-heading {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.sub-heading {
+    font-size: 5rem;
+    color: var(--color-white);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/** REVENUE SECTION **/
+
+.revenue {
+    background-color: var(--color-white-dark);
+    height: 20vh;
+}
+
+.revenue-container {
+    max-width: 114rem;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.revenue__description {
+    font-size: 2.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-white-dark-1);
+}
+
+.revenue__button {
+    background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+    padding: 1.5rem 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition: all .4s;
+    backface-visibility: hidden;
+}
+
+.revenue__button:hover,
+.revenue__button:active {
+    transform: scale(1.1);
+}
+
+
+/** SECTION OFFERS */
+
+.offers {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: center;
+    
+    padding: 5rem 6rem;
+}
+
+.offer-box {
+    margin: 0 4rem;
+}
+
+.offer-box__header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    
+    margin-bottom: 3rem;
+
+}
+
+.offer-box__icon {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+
+}
+
+.offer-box__heading {
+    font-size: 3rem;
+    color: var(--color-white-dark-1);
+    font-weight: 700;
+}
+
+.offer-box__description {
+    display: flex;
+
+}
+
+.offer-box__text {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: var(--color-white-dark-1);
+    text-align: center;
+}
+
+/** SECTION TESTIMONIALS */
+
+.testimonials {
+    padding: 5rem 6rem;
+    
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.testimonial-box {
+    box-shadow: -3px 7px 37px -6px var(--color-white-dark-1);
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    flex: 0 0 35%;
+}
+
+.testimonial-box__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-box__heading {
+    color: var(--color-white-dark);
+    font-size: 3rem;
+}
+
+.testimonial-box__heading::after {
+    display: block;
+    border-bottom: 4px solid var(--color-secondary-light);
+    content: "";
+    width: 40px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.testimonial-box__heading span {
+    color: var(--color-white-dark-1);
+}
+
+.testimonial-box__description {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.testimonial-box__quotation {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    margin-top: 6px;
+    align-self: flex-start;
+}
+
+.testimonial-box__text {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--color-white-dark-1);
+}
+
+.testimonial-box__clients {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-box__client {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    margin-right: 1.5rem;
+}
+
+.testimonial-box__name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--color-white-dark-1);
+}
+
+.testimonial-box__job {
+    font-size: 1.4rem;
+    color: var(--color-white-dark);
+    align-self: flex-end;
+    justify-self: start;
+}
+
+
+.testimonial-selectors {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    max-width: 15rem;
+
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    
+}
+
+.testimonial-button {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-white-dark);
+}
+
+.testimonial-button:hover,
+.testimonial-button:active {
+    background-color: var(--color-white-dark-1);
+}
+
+/* BUTTON CONTAINER */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding: 3rem 5rem;
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--color-white-dark);
+    padding: 5rem 6rem;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: center;
+    
+    
+}
+
+.copyright {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-white-dark-1);
+}
+

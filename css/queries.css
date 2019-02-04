@@ -1,0 +1,160 @@
+/* MEDIA QUERIES */
+
+/** BIG TABLET TO DESKTOP 1200px **/
+@media only screen and (max-width: 1140px) {
+    
+    .heading-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+}
+
+/** SMALL TABLET TO BIG TABLET: from 930 to 1050px ***/
+
+@media only screen and (max-width: 1050px) {
+    html {
+        font-size: 58%;
+    }
+
+    .header {
+        padding: 4rem 5rem;
+    }
+
+    .main-heading {
+        font-size: 5.5rem;
+    }
+
+    .heading-box {
+        margin-top: 20rem;
+    }
+    
+    .sub-heading {
+        font-size: 4.8rem;
+    }
+
+    .testimonial-box {
+        box-shadow: -3px 7px 37px -6px var(--color-white-dark-1);
+        border-radius: 1rem;
+        padding: 2rem 4rem;
+        flex: 0 0 45%;
+    }
+} 
+
+/** PHONES TO TABLETS: from 760 to 930px ***/
+
+@media only screen and (max-width: 930px) {
+    html {
+        font-size: 50%;
+    }
+
+
+    .heading-box {
+        margin-top: 25rem;
+    }
+}
+
+/** SMALL PHONES TO SMALL TABLETS: from 690px to 760px ***/
+
+@media only screen and (max-width: 760px) {
+    html {
+        font-size: 45%;
+    }
+
+    .heading-box {
+        margin-top: 30rem;
+    }
+
+    .header {
+        padding: 3rem 4rem;
+    }
+
+    .testimonial-box {
+        box-shadow: -3px 7px 37px -6px var(--color-white-dark-1);
+        border-radius: 1rem;
+        padding: 2rem 4rem;
+        flex: 0 0 65%;
+    }
+}
+/** SMALL PHONES TO SMALL TABLETS: from 520px to 690px ***/
+
+@media only screen and (max-width: 690px) {
+    .revenue-container {
+        flex-wrap: wrap;
+    }
+
+    .heading-box {
+        margin-top: 12rem;
+    }
+
+    .revenue__description {
+        margin-bottom: 4rem;
+    }
+}
+
+/** SMALL PHONES TO SMALL TABLETS: from 480px to 520px ***/
+
+@media only screen and (max-width: 520px) {
+    html {
+        font-size: 35%;
+    }
+
+    .heading-box {
+        margin-top: 20rem;
+    }
+
+    .revenue-container {
+        flex-wrap: wrap;
+    }
+
+    .revenue__description {
+        margin-bottom: 4rem;
+    }
+
+    .offers {
+        flex-direction: column;
+    }
+
+    .offer-box {
+        margin-top: 7rem;
+        width: 100%;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    .testimonial-box {
+        box-shadow: -3px 7px 37px -6px var(--color-white-dark-1);
+        border-radius: 1rem;
+        padding: 2rem 4rem;
+        margin-top: 10rem;
+        flex: 0 0 90%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 30%;
+    }
+    
+    .heading-box {
+        margin-top: 20rem;
+    }
+
+    .offers {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+}
